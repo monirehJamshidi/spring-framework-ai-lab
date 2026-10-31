@@ -1,0 +1,101 @@
+
+### 1. First Spring AI request
+### Explain the difference between REQUIRED and REQUIRES_NEW
+# @timeout 300
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "spring-interview-1",
+  "message": "Explain the difference between REQUIRED and REQUIRES_NEW in Spring with a practical example."
+}
+
+### 2. Explain Transaction Propagation
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "spring-interview-1",
+  "message": "Explain Transaction Propagation in Spring briefly."
+}
+
+### 3. Practical example with OrderService and AuditService
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "spring-interview-1",
+  "message": "Now give me a practical example of it with OrderService and AuditService."
+}
+
+### 4. Summarize the OrderService and AuditService example
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "spring-interview-1",
+  "message": "Summarize the OrderService and AuditService example you just explained in two sentences."
+}
+
+### 5. Explain Spring AI in three simple sentences
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "spring-interview-1",
+  "message": "Explain Spring AI in three simple sentences."
+}
+
+### 6. Explain Spring AI in exactly three sentences
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "instruct-model-test",
+  "message": "Explain Spring AI in exactly three simple sentences."
+}
+
+### 7. Test conversation context
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "instruct-model-test",
+  "message": "What did I ask you to explain in my previous message? Answer in one short sentence."
+}
+
+### 8. Test calculator tool
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "tool-call-test",
+  "message": "Use the calculator tool to calculate simple interest on EUR 1000 at 3% per year for 6 months. Tell me the interest and total amount."
+}
+
+### 9. Test calculateSimpleInterest with exact arguments
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "calculator-test-002",
+  "message": "Call the calculateSimpleInterest tool with exactly these arguments: principal = 1000.0, annualRatePercent = 3.0, months = 6. Do not change any argument. Return the calculated interest and total amount."
+}
+
+### 10. Test simple interest calculation
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "calculator-test-003",
+  "message": "Calculate simple interest for principal 1000 euros, annual rate 3 percent, and duration 6 months. Use the calculator tool."
+}
+
+### 11. Explain Spring Boot
+POST http://localhost:8081/api/ai/chat
+Content-Type: application/json
+
+{
+  "conversationId": "test-001",
+  "message": "Explain Spring Boot"
+}
